@@ -1,9 +1,5 @@
-import { createStore } from "redux";
-import countReducer from "./Count/reducer";
-import displayReducer from './display/reducer'
-import { combineReducers } from "redux";
-
-const reducer = combineReducers({countReducer,displayReducer})
-const store = createStore(reducer);
-
+import {createStore} from 'redux'
+import Reducer from './reducer'
+ 
+const store = createStore(Reducer)
 export default store;
